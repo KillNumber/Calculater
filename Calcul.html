@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <head>
+        <h1>Кошелек</h1>
+        <h1>Калькулятор доходов</h1>
+    </head>
+    <main>
+        <div class="contener">
+            <section class="total">
+                <header class="total__head">
+                    <h3>Баланс</h3>
+                    <p class="total__balance">0 ₽</p>
+                </header>
+                <div class="total__main">
+                    <div class="total__main-item total__income">
+                        <h4>Доходы</h4>
+                        <p class="total__main-item total__main-income">0 ₽</p>
+                    </div>
+                    <div class="total__main-item total__expenses">
+                        <h4>Расходы</h4>
+                        <p class="total__main-item total__main-expenses">0 ₽</p>
+                    </div>
+                </div>
+            </section>
+            <section class="history">
+                <h3>История расходов</h3>
+                <ul class="history__list">
+                    <li class="history__item history__item-plus"> Получить зарплату
+                        <span class="history__money">20000 ₽</span>
+                        <button class="history_delete">x</button>
+                    </li>
+                    <li class="history__item history__item-minus"> Продажа
+                        <span class="history__money">-20000 ₽</span>
+                        <button class="history_delete">x</button>
+                    </li>
+                </ul>
+            </section>
+            <section class="operation">
+                <h3>Новая операция</h3>
+                <form id="form">
+                    <label>
+                        <input type="text" class="operation__failds operation__name"
+                            placeholder="Наименование операции">
+                    </label>
+                    <label>
+                        <input type="number" class="operation__failds operation__amount" placeholder="Введите сумму">
+                    </label>
+                    <button type="submit" class="operation__addIcome" data-action="Icom" id="addIcome">Добавить
+                        операцию</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

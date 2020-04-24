@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #242424;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1 {
+  margin: 5px;
+}
+body {
+  margin: 0;
+  background-color: #bcbcbc;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: #dbdbdb;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+
+header h3 {
+  font-size: 16px;
+}
+.total__main {
+  background-color: #dbdbdb;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 5px;
+  margin-top: 5vh;
+}
+
+.total__main-income {
+  border-top: 1px solid black;
+  text-align: center;
+  padding-top: 3vh;
+}
+
+.total__main-expenses {
+  border-top: 1px solid black;
+  text-align: center;
+  padding-top: 3vh;
+}
+
+.history {
+  text-align: center;
+}
+.history__item {
+  align-items: center;
+  background-color: #fff;
+  border-width: 1px;
+  border-left: 10px solid;
+  border-right: 10px solid;
+  border-style: solid;
+  border-radius: 10px;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px 0;
+  line-height: 25px;
+}
+
+.history__item-plus {
+  border-left-color: green;
+  border-right-color: green;
+}
+
+.history__item-minus {
+  border-left-color: orange;
+  border-right-color: orange;
+}
+
+.history__money {
+  flex: 1;
+  text-align: right;
+  padding-right: 10px;
+}
+
+span {
+  padding-left: 50vh;
+}
+
+.history_delete {
+  background-color: transparent;
+  outline: none;
+  color: red;
+  padding: 0 10;
+  border-width: 0;
+  font-size: 20px;
+  opacity: 0;
+  transition: opacity 0.3 easy;
+  cursor: pointer;
+}
+
+.history__item:hover .history_delete {
+  opacity: 1;
+}
+
+li {
+  list-style-type: none;
+}
+
+.operation {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: #ddd;
+  border-radius: 25px;
+  padding: 15px 15px;
+  text-align: center;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+.operation__failds {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 5px 0;
+  font-size: 16px;
+  width: 100%;
+  outline: transparent;
+}
+
+.operation__failds:focus {
+  border: 1px solid greenyellow;
+}
+
+#addIcome {
+  background-color: rgb(55, 55, 243);
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(55, 55, 243);
+  color: #fff;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px 0;
+  width: 100%;
+  margin: 15px 0;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+#addIcome:hover {
+  background-color: black;
+  border-color: black;
+}
